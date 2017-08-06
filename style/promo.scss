@@ -1,0 +1,30 @@
+.promo {
+    position: relative;
+    margin-top: -13px;
+    height: 535px;
+    background: url('../img/promo.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.promo__logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -70px;
+    margin-top: -70px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: #451a4a;
+
+    svg {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -28px;
+        margin-top: -28px;
+        width: 56px;
+        height: 56px;
+        fill: #fff;
+    }
+}

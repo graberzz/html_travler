@@ -1,0 +1,47 @@
+.header {
+    position: relative;
+    height: 230px;
+    background: #eee;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.header__top-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 590px;
+}
+
+.header__search {
+    input[type="search"] {
+        width: 300px;
+        padding: 20px;
+        padding-right: 40px;
+        border: none;
+        background: #fff url('../img/clock.svg') no-repeat center right 14px;
+    }
+}
+
+.header__quicklinks {
+    &::after {
+        content: '';
+        width: 10px;
+        height: 20px;
+        display: inline-block;
+        margin-left: 5px;
+        vertical-align: middle;
+        background: url('../img/map-marker.svg') no-repeat center;
+        background-size: contain;
+    }
+}
+
+.header__bottom {
+    position: relative;
+    top: 14px;
+}
