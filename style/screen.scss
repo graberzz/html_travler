@@ -1,0 +1,45 @@
+.screen {
+    max-width: 1260px;
+    height: 470px;
+    margin: 0 auto;
+    padding: 105px 130px 0;
+    border: 50px solid #070707;
+    border-radius: 30px;
+    background: linear-gradient(30deg, #37007d, #8f33c4);
+    text-align: center;
+}
+
+.screen__list {
+    @include unstyled-list();
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.screen__img {
+    position: relative;
+    svg {
+        width: 100px;
+        height: 100px;
+        fill: #fff;
+    }
+}
+
+.screen__line {
+    flex-shrink: 1;
+    width: 140px;
+    height: 5px;
+    margin: 0 30px;
+    background: #fff;
+}
+
+.screen__title {
+    font-size: 36px;
+    color: #fff;
+}
+
+.screen__subheading {
+    font-size: 14px;
+    color: #a161db;
+    text-shadow: 0 2px #000;
+}

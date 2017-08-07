@@ -5,13 +5,12 @@
     box-shadow: 0 3px 10px rgba(#000, .5);
     height: 113px;
     position: relative;
-   z-index: 3;
 }
 
 .main-nav__item {
     flex-grow: 1;
     position: relative;
- z-index: 4;
+    background-color: #eee;
     a {
         height: 113px;
         text-align: center;
@@ -21,6 +20,7 @@
         border-bottom: 5px solid #701dbb;
         color: #707070;
         &:hover {
+            z-index: 30;
             color: #701dbb;
             box-shadow: 0 3px 10px rgba(#000, .3);
             border-bottom-width: 13px;
@@ -39,9 +39,10 @@
     }
 
     &:hover {
+        z-index: 3;
         position: relative;
-        background: #eee;
-        transform: scale(1.2) translateY(-14px);
+        background: #fff;
+        transform: scale(1.2) translateY(-15px);
 
         svg {
             fill: #701dbb;
@@ -50,5 +51,15 @@
 
     &:not(:last-child) {
         border-right: 1px solid #d4d4d4;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        right: -1px;
+        bottom: 0;
+        width: 1px;
+        height: 5px;
+        background: #701dbb;
     }
 }

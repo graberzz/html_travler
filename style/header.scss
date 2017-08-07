@@ -1,6 +1,5 @@
 .header {
     position: relative;
-    height: 230px;
     background: #eee;
 }
 
@@ -8,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .header__top-right {
@@ -43,5 +42,6 @@
 
 .header__bottom {
     position: relative;
-    top: 14px;
+    top: 13px;
+    z-index: 1;
 }

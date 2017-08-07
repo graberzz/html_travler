@@ -1,0 +1,81 @@
+.features {
+    padding-top: 50px;
+    background: #2d2d2d;
+}
+
+.features__title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+}
+
+.features__subheading {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    color: #a161db;
+}
+
+.features__map {
+    width: 100%;
+    height: 241px;
+    background: url('../img/map.png') no-repeat center center;
+    background-size: contain;
+}
+
+.features__list {
+    @include unstyled-list();
+    position: relative;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 240px;
+        top: 40px;
+        width: 140px;
+        height: 3px;
+        background: #6d6d6d;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 570px;
+        top: 40px;
+        width: 140px;
+        height: 3px;
+        background: #6d6d6d;
+    }
+}
+
+.features__item {
+    padding-top: 130px;
+    width: 300px;
+
+    &:nth-child(1) {
+        background: url('../img/clock2.svg') no-repeat center top; 
+    }
+    &:nth-child(2) {
+        background: url('../img/cloud.svg') no-repeat center top 10px; 
+    }
+    &:nth-child(3) {
+        background: url('../img/mailbox.svg') no-repeat center top; 
+    }
+}
+
+.features__item-title {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.features__item-desc {
+    margin: 0;
+    line-height: 1.5;
+    font-size: 12px;
+}
