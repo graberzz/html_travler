@@ -1,0 +1,45 @@
+.member {
+    text-align: left;
+}
+
+.member__photo {
+    position: relative;
+    margin-bottom: 25px;
+    img {
+        position: relative;
+        z-index: 2;
+        display: block;
+        width: 210px;
+        height: 210px;
+        border: 5px solid #fff;
+        box-shadow: 0 0 1px rgba(#000, .5);
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        width: 210px;
+        height: 210px;
+        background: #fff;
+        transform: rotate(-3deg);
+        box-shadow: 0 0 3px rgba(#000, .5);
+    }
+}
+
+.member__twitter {
+    position: absolute;
+    z-index: 3;
+    right: 5px;
+    bottom: 5px;
+    width: 47px;
+    height: 41px;
+    background: #8f33c4 url('../img/twitter.svg') no-repeat center;
+    background-size: 60%;
+}
+
+.member__name {
+    margin-bottom: 6px;
+}
