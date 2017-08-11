@@ -8,6 +8,7 @@
     margin-bottom: 10px;
     font-size: 36px;
     text-align: center;
+    font-family: 'Nexa Book';
     color: #fff;
 }
 
@@ -15,6 +16,7 @@
     font-size: 14px;
     font-weight: 700;
     text-align: center;
+    font-family: 'Nexa Black';
     color: #a161db;
 }
 
@@ -31,6 +33,7 @@
     color: #fff;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
 
     &::before {
         content: '';
@@ -72,10 +75,12 @@
     margin: 0;
     margin-bottom: 15px;
     font-size: 24px;
+    font-family: 'Nexa Book';
 }
 
 .features__item-desc {
     margin: 0;
-    line-height: 1.5;
+    line-height: 22px;
     font-size: 12px;
+    font-family: Arial;
 }

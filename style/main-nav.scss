@@ -1,10 +1,11 @@
 .main-nav__list {
     @include unstyled-list();
+    position: relative;
     display: flex;
     justify-content: space-between;
     box-shadow: 0 3px 10px rgba(#000, .5);
     height: 113px;
-    position: relative;
+    font-family: 'PT Sans Bold';
 }
 
 .main-nav__item {

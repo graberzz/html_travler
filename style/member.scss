@@ -1,5 +1,6 @@
 .member {
     text-align: left;
+    overflow: visible !important;
 }
 
 .member__photo {
@@ -32,7 +33,7 @@
 .member__twitter {
     position: absolute;
     z-index: 3;
-    right: 5px;
+    right: 30px;
     bottom: 5px;
     width: 47px;
     height: 41px;
@@ -42,4 +43,9 @@
 
 .member__name {
     margin-bottom: 6px;
+    font-family: 'PT Sans Bold';
+}
+
+.member__rank {
+    font-family: 'PT Sans';
 }

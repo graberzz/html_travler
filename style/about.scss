@@ -29,6 +29,7 @@
 .about__title {
     position: relative;
     font-size: 36px;
+    font-family: 'Nexa Book';
     margin-bottom: 5px;
 
     h3 {
@@ -55,13 +56,14 @@
 
 .about__subheading {
     margin: 0;
+    margin-bottom: 50px;
     font-size: 14px;
+    font-family: 'Nexa Bold';
 }
 
 .about__staff-list {
     @include unstyled-list();
-    display: flex;
-    justify-content: space-between;
+    
     margin-bottom: 35px;
 }
 
@@ -76,4 +78,18 @@ button {
     width: 30px;
     position: relative;
     z-index: 3;
+}
+
+div[data-tns-role=wrapper] {
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 7px;
+        background: #ebebeb;
+    }
 }

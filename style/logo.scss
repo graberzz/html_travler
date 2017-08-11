@@ -1,6 +1,9 @@
 .logo {
     position: relative;
     padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     svg {
         position: absolute;
         left: 0;
@@ -12,14 +15,16 @@
 }
 
 .logo__title {
+    margin-bottom: 10px;
+    font-family: 'Nexa Black';
     color: #6a19ac;
     font-size: 40px;
-    font-weight: 800;
     display: block;
     line-height: .5;
 }
 
 .logo__slogan {
+    font-family: 'PT Sans';
     font-size: 12px;
     color: #7d7d7d;
     text-shadow: 0 0 1px #fff;

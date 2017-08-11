@@ -39,6 +39,7 @@
     @include unstyled-list();
     display: flex;
     margin-bottom: 30px;
+    font-family: 'Nexa Bold';
 }
 
 .footer__nav-item {
@@ -71,6 +72,7 @@
 .footer__socials {
     @include unstyled-list();
     display: flex;
+    font-family: 'PT Sans Bold';
 }
 
 .footer__social {
@@ -101,5 +103,40 @@
         a {
             background: url('../img/mail.svg') no-repeat left center;
         }
+    }
+}
+
+.footer__links {
+    @include unstyled-list();
+
+    display: flex;
+    font-family: 'Helvetica';
+}
+
+.footer__link {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.footer__text {
+    font-family: 'Helvetica';
+    font-size: 12px;
+    line-height: 23px;
+}
+
+.footer__copyrights {
+    font-family: 'Helvetica';
+    font-size: 11px;
+    color: #7e7e7e;
+}
+
+.footer__logo {
+    .logo__title {
+        color: #fff;
+        margin-top: 0;
+    }
+
+    .logo__slogan {
+        text-shadow: none;
     }
 }
