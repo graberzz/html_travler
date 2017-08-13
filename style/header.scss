@@ -1,10 +1,12 @@
 .header {
     position: relative;
+    padding-top: 45px;
     background: #eee;
 }
 
 .header__top {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
@@ -46,4 +48,21 @@
     position: relative;
     top: 13px;
     z-index: 1;
+}
+
+@media (max-width: 594px) {
+    .header__top {
+        justify-content: center;
+    }
+
+    .header__logo, .header__quicklinks {
+        margin-bottom: 15px;
+    }
+    .header__top-right {
+        flex-direction: column;
+    }
+
+    .header__select {
+        margin-bottom: 10px;
+    }
 }

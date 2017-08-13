@@ -2,7 +2,7 @@
     max-width: 1260px;
     height: 470px;
     margin: 0 auto;
-    padding: 105px 130px 0;
+    padding-top: 105px;
     border: 50px solid #070707;
     border-radius: 30px;
     background: linear-gradient(30deg, #37007d, #8f33c4);
@@ -17,7 +17,7 @@
 .screen__list {
     @include unstyled-list();
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
@@ -45,8 +45,32 @@
 }
 
 .screen__subheading {
+    margin: 0; 
     font-size: 14px;
     font-family: 'Nexa Bold';
     color: #a161db;
     text-shadow: 0 2px #000;
+}
+
+@media (max-width: 734px) {
+    .screen__title {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .screen {
+        border-width: 20px;
+    }
+
+    .screen__img{
+        svg {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    .screen__line {
+        height: 2px;
+    }
 }

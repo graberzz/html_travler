@@ -63,7 +63,9 @@
 
 .about__staff-list {
     @include unstyled-list();
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 35px;
 }
 

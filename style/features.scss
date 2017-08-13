@@ -84,3 +84,23 @@
     font-size: 12px;
     font-family: Arial;
 }
+
+@media (max-width: 970px) {
+    .features__list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .features__item {
+        padding-top: 80px;
+        margin-bottom: 25px;
+    }
+
+    .features__item-title {
+        text-align: center;
+    }
+
+    .features__list::before, .features__list::after {
+        content: none;
+    }
+}

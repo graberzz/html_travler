@@ -38,12 +38,13 @@
 .footer__nav {
     @include unstyled-list();
     display: flex;
-    margin-bottom: 30px;
+    flex-wrap: wrap;
     font-family: 'Nexa Bold';
 }
 
 .footer__nav-item {
     position: relative;
+    margin-bottom: 30px;
     padding-right: 20px;
 
     &::after {
@@ -72,11 +73,13 @@
 .footer__socials {
     @include unstyled-list();
     display: flex;
+    flex-wrap: wrap;
     font-family: 'PT Sans Bold';
 }
 
 .footer__social {
     margin-right: 30px;
+    margin-bottom: 30px;
 
     a {
         position: relative;
@@ -110,6 +113,7 @@
     @include unstyled-list();
 
     display: flex;
+    flex-wrap: wrap;
     font-family: 'Helvetica';
 }
 
@@ -139,4 +143,8 @@
     .logo__slogan {
         text-shadow: none;
     }
+}
+
+@media (max-width: 906px) {
+
 }
